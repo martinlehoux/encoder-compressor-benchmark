@@ -3,12 +3,14 @@ from encoder_compressor_benchmark.compressors import (
     BaseCompressor,
     GZIPCompressor,
     ZSTDCompressor,
+    ZLIBCompressor,
 )
 
 
 @pytest.mark.parametrize("Compressor,expected_size", [
     (GZIPCompressor, '29 Bytes'),
     (ZSTDCompressor, '18 Bytes'),
+    (ZLIBCompressor, '17 Bytes'),
 ])
 def test_compressors(Compressor: BaseCompressor, expected_size: str):
     comp = Compressor()
