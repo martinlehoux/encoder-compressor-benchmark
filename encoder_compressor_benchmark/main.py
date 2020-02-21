@@ -1,22 +1,8 @@
 import json
-import humanize
-import os.path as path
 from terminaltables import SingleTable
-from typing import List
 
-from .encoders import BaseEncoder, JSONEncoder, MSGPACKEncoder
-from .compressors import BaseCompressor, GZIPCompressor, ZSTDCompressor
-
-
-ENABLED_ENCODERS: List[BaseEncoder] = [
-    JSONEncoder,
-    MSGPACKEncoder
-]
-
-ENABLED_COMPRESSORS: List[BaseCompressor] = [
-    GZIPCompressor,
-    ZSTDCompressor
-]
+from .encoders import ENABLED_ENCODERS
+from .compressors import ENABLED_COMPRESSORS
 
 
 def main():
