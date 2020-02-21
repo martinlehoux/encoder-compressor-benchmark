@@ -6,6 +6,7 @@ from encoder_compressor_benchmark.encoders.msgpack import MSGPACKEncoder
 from encoder_compressor_benchmark.encoders.yaml import YAMLEncoder
 from encoder_compressor_benchmark.encoders.ujson import UJSONEncoder
 from encoder_compressor_benchmark.encoders.pickle import PICKLEEncoder
+from encoder_compressor_benchmark.encoders.marshal import MARSHALEncoder
 
 
 AVAILABLE_ENCODERS: List[BaseEncoder] = [
@@ -14,4 +15,5 @@ AVAILABLE_ENCODERS: List[BaseEncoder] = [
     YAMLEncoder,
     UJSONEncoder,
     PICKLEEncoder,
+    MARSHALEncoder,
 ]
