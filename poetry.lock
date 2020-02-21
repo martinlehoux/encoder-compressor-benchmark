@@ -273,6 +273,14 @@ version = "3.1.0"
 
 [[package]]
 category = "main"
+description = "Ultra fast JSON encoder and decoder for Python"
+name = "ujson"
+optional = false
+python-versions = "*"
+version = "1.35"
+
+[[package]]
+category = "main"
 description = "Measures number of Terminal column cells of wide-character codes"
 name = "wcwidth"
 optional = false
@@ -301,7 +309,7 @@ python-versions = "*"
 version = "1.4.4.0"
 
 [metadata]
-content-hash = "2cb3a3fd9cf7b24e226784b82be55d581faeea3760e41e7af97f29b5eca85ee3"
+content-hash = "1bee435c8e37c69e10253e114321360f3317f0decaa2e7eca7e3ec780d436fa9"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -476,6 +484,9 @@ six = [
 ]
 terminaltables = [
     {file = "terminaltables-3.1.0.tar.gz", hash = "sha256:f3eb0eb92e3833972ac36796293ca0906e998dc3be91fbe1f8615b331b853b81"},
+]
+ujson = [
+    {file = "ujson-1.35.tar.gz", hash = "sha256:f66073e5506e91d204ab0c614a148d5aa938bdbf104751be66f8ad7a222f5f86"},
 ]
 wcwidth = [
     {file = "wcwidth-0.1.8-py2.py3-none-any.whl", hash = "sha256:8fd29383f539be45b20bd4df0dc29c20ba48654a41e661925e612311e9f3c603"},
