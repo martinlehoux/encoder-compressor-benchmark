@@ -6,6 +6,8 @@ class BaseEncoder:
     _time: float = 0
     ext: str = ''
     _size: int = 0
+    # Used for testing
+    test_size: str
 
     def _encode(self, data: object) -> bytes:
         raise NotImplementedError

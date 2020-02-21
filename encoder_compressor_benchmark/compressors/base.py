@@ -6,6 +6,8 @@ class BaseCompressor:
     _time: float = 0
     ext: str = ''
     _size: int = 0
+    # Used for testing
+    test_size: str
 
     def _compress(self, data: bytes) -> bytes:
         raise NotImplementedError

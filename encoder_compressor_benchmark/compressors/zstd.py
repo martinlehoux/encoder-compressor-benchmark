@@ -5,6 +5,7 @@ from .base import BaseCompressor
 
 class ZSTDCompressor(BaseCompressor):
     ext = 'zstd'
+    test_size = 18
 
     def _compress(self, data):
         return zstd.compress(data)
