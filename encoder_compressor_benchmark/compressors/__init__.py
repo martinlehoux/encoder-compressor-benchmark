@@ -4,10 +4,12 @@ from encoder_compressor_benchmark.compressors.base import BaseCompressor
 from encoder_compressor_benchmark.compressors.zstd import ZSTDCompressor
 from encoder_compressor_benchmark.compressors.gzip import GZIPCompressor
 from encoder_compressor_benchmark.compressors.zlib import ZLIBCompressor
+from encoder_compressor_benchmark.compressors.bz2 import BZIP2Compressor
 
 
 AVAILABLE_COMPRESSORS: List[BaseCompressor] = [
     GZIPCompressor,
     ZSTDCompressor,
-    ZLIBCompressor
+    ZLIBCompressor,
+    BZIP2Compressor,
 ]
