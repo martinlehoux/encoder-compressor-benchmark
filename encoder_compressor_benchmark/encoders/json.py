@@ -1,6 +1,6 @@
 import json
 
-from .base import BaseEncoder
+from encoder_compressor_benchmark.encoders.base import BaseEncoder
 
 
 class JSONEncoder(BaseEncoder):

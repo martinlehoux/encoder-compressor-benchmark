@@ -1,6 +1,6 @@
 import zstd
 
-from .base import BaseCompressor
+from encoder_compressor_benchmark.compressors.base import BaseCompressor
 
 
 class ZSTDCompressor(BaseCompressor):

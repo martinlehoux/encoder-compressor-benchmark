@@ -1,6 +1,6 @@
 import gzip
 
-from .base import BaseCompressor
+from encoder_compressor_benchmark.compressors.base import BaseCompressor
 
 
 class GZIPCompressor(BaseCompressor):

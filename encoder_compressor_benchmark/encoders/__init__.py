@@ -1,9 +1,9 @@
 from typing import List
 
-from .base import BaseEncoder
-from .json import JSONEncoder
-from .msgpack import MSGPACKEncoder
-from .yaml import YAMLEncoder
+from encoder_compressor_benchmark.encoders.base import BaseEncoder
+from encoder_compressor_benchmark.encoders.json import JSONEncoder
+from encoder_compressor_benchmark.encoders.msgpack import MSGPACKEncoder
+from encoder_compressor_benchmark.encoders.yaml import YAMLEncoder
 
 
 ENABLED_ENCODERS: List[BaseEncoder] = [

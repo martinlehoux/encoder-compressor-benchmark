@@ -1,8 +1,8 @@
 import json
 from terminaltables import SingleTable
 
-from .encoders import ENABLED_ENCODERS
-from .compressors import ENABLED_COMPRESSORS
+from encoder_compressor_benchmark.encoders import AVAILABLE_ENCODERS
+from encoder_compressor_benchmark.compressors import AVAILABLE_COMPRESSORS
 
 
 def main():

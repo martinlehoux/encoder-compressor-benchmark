@@ -1,5 +1,5 @@
 import zlib
-from .base import BaseCompressor
+from encoder_compressor_benchmark.compressors.base import BaseCompressor
 
 
 class ZLIBCompressor(BaseCompressor):

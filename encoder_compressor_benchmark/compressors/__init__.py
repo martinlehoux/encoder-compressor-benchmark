@@ -1,9 +1,9 @@
 from typing import List
 
-from .base import BaseCompressor
-from .zstd import ZSTDCompressor
-from .gzip import GZIPCompressor
-from .zlib import ZLIBCompressor
+from encoder_compressor_benchmark.compressors.base import BaseCompressor
+from encoder_compressor_benchmark.compressors.zstd import ZSTDCompressor
+from encoder_compressor_benchmark.compressors.gzip import GZIPCompressor
+from encoder_compressor_benchmark.compressors.zlib import ZLIBCompressor
 
 
 ENABLED_COMPRESSORS: List[BaseCompressor] = [
