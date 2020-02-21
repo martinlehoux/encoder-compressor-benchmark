@@ -6,7 +6,7 @@ from encoder_compressor_benchmark.encoders.msgpack import MSGPACKEncoder
 from encoder_compressor_benchmark.encoders.yaml import YAMLEncoder
 
 
-ENABLED_ENCODERS: List[BaseEncoder] = [
+AVAILABLE_ENCODERS: List[BaseEncoder] = [
     JSONEncoder,
     MSGPACKEncoder,
     YAMLEncoder

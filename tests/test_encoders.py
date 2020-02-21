@@ -1,11 +1,11 @@
 import pytest
 from encoder_compressor_benchmark.encoders import (
     BaseEncoder,
-    ENABLED_ENCODERS
+    AVAILABLE_ENCODERS
 )
 
 
-@pytest.mark.parametrize("Encoder", ENABLED_ENCODERS)
+@pytest.mark.parametrize("Encoder", AVAILABLE_ENCODERS)
 def test_encoders(Encoder: BaseEncoder):
     enc = Encoder()
     assert enc.size == '0 Bytes'

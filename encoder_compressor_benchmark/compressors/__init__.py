@@ -6,7 +6,7 @@ from encoder_compressor_benchmark.compressors.gzip import GZIPCompressor
 from encoder_compressor_benchmark.compressors.zlib import ZLIBCompressor
 
 
-ENABLED_COMPRESSORS: List[BaseCompressor] = [
+AVAILABLE_COMPRESSORS: List[BaseCompressor] = [
     GZIPCompressor,
     ZSTDCompressor,
     ZLIBCompressor

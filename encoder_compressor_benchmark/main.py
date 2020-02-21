@@ -11,10 +11,10 @@ def main():
     print("data loaded")
 
     table_data = [['', 'Encoding phase']]
-    for compressor in ENABLED_COMPRESSORS:
+    for compressor in AVAILABLE_COMPRESSORS:
         table_data[0].append(compressor.__name__)
 
-    for Encoder in ENABLED_ENCODERS:
+    for Encoder in AVAILABLE_ENCODERS:
         encoder = Encoder()
         size_line = [f'{Encoder.__name__} - size']
         time_line = [f'{Encoder.__name__} - time']
@@ -23,7 +23,7 @@ def main():
         size_line.append(encoder.size)
         time_line.append(encoder.time)
 
-        for Compressor in ENABLED_COMPRESSORS:
+        for Compressor in AVAILABLE_COMPRESSORS:
             compressor = Compressor()
             compressor.compress(encoded_data)
             size_line.append("{size} ({ratio:.0%})".format(

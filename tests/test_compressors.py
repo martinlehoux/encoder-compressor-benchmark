@@ -1,11 +1,11 @@
 import pytest
 from encoder_compressor_benchmark.compressors import (
     BaseCompressor,
-    ENABLED_COMPRESSORS
+    AVAILABLE_COMPRESSORS
 )
 
 
-@pytest.mark.parametrize("Compressor", ENABLED_COMPRESSORS)
+@pytest.mark.parametrize("Compressor", AVAILABLE_COMPRESSORS)
 def test_compressors(Compressor: BaseCompressor):
     comp = Compressor()
     assert comp.size == '0 Bytes'
