@@ -1,8 +1,10 @@
 import json
 from terminaltables import SingleTable
 
-from encoder_compressor_benchmark.encoders import AVAILABLE_ENCODERS
-from encoder_compressor_benchmark.compressors import AVAILABLE_COMPRESSORS
+from encoder_compressor_benchmark.select_from_list import (
+    ENABLED_ENCODERS,
+    ENABLED_COMPRESSORS
+)
 
 
 def main():
@@ -11,10 +13,10 @@ def main():
     print("data loaded")
 
     table_data = [['', 'Encoding phase']]
-    for compressor in AVAILABLE_COMPRESSORS:
+    for compressor in ENABLED_COMPRESSORS:
         table_data[0].append(compressor.__name__)
 
-    for Encoder in AVAILABLE_ENCODERS:
+    for Encoder in ENABLED_ENCODERS:
         encoder = Encoder()
         size_line = [f'{Encoder.__name__} - size']
         time_line = [f'{Encoder.__name__} - time']
@@ -23,7 +25,7 @@ def main():
         size_line.append(encoder.size)
         time_line.append(encoder.time)
 
-        for Compressor in AVAILABLE_COMPRESSORS:
+        for Compressor in ENABLED_COMPRESSORS:
             compressor = Compressor()
             compressor.compress(encoded_data)
             size_line.append("{size} ({ratio:.0%})".format(
