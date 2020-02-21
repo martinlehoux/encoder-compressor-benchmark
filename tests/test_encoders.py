@@ -3,12 +3,14 @@ from encoder_compressor_benchmark.encoders import (
     BaseEncoder,
     JSONEncoder,
     MSGPACKEncoder,
+    YAMLEncoder,
 )
 
 
 @pytest.mark.parametrize("Encoder,expected_size", [
     (JSONEncoder, '9 Bytes'),
     (MSGPACKEncoder, '4 Bytes'),
+    (YAMLEncoder, '12 Bytes'),
 ])
 def test_encoders(Encoder: BaseEncoder, expected_size: str):
     enc = Encoder()
