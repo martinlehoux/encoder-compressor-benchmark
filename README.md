@@ -1,8 +1,5 @@
 ## Installation
 
-## Configuration
-* `cp sample.env .env`
-
 ## Usage
 * `poetry run main`
 
