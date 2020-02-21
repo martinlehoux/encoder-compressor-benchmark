@@ -10,6 +10,15 @@ from encoder_compressor_benchmark.compressors import (
     BaseCompressor
 )
 
+
+def validate_float(string: str):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        return 'Use a valid Python float'
+
+
 questions = [
     {
         'type': 'checkbox',
@@ -17,7 +26,7 @@ questions = [
         'message': 'Activate encoders',
         'choices': [{
             'name': Enc.__name__
-        } for Enc in AVAILABLE_ENCODERS]
+        } for Enc in AVAILABLE_ENCODERS],
     },
     {
         'type': 'checkbox',
@@ -25,7 +34,15 @@ questions = [
         'message': 'Activate compressors',
         'choices': [{
             'name': Enc.__name__
-        } for Enc in AVAILABLE_COMPRESSORS]
+        } for Enc in AVAILABLE_COMPRESSORS],
+    },
+    {
+        'type': 'input',
+        'name': 'bandwidth',
+        'message': 'Network bandwidth (bytes/sec)',
+        'default': '1e6',
+        'validate': validate_float,
+        'filter': lambda val: float(val),
     }
 ]
 
@@ -38,3 +55,4 @@ ENABLED_COMPRESSORS: List[BaseCompressor] = list(filter(
     lambda enc: enc.__name__ in answers['enabled_compressors'],
     AVAILABLE_COMPRESSORS
 ))
+BANDWIDTH = answers['bandwidth']
