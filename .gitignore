@@ -1,0 +1,4 @@
+*.egg-info
+base.json
+*.pyc
+.coverage
