@@ -76,6 +76,14 @@ pyflakes = ">=2.1.0,<2.2.0"
 
 [[package]]
 category = "main"
+description = "Simple decoder and encoder for CBOR"
+name = "flynn"
+optional = false
+python-versions = "*"
+version = "1.0.0b2"
+
+[[package]]
+category = "main"
 description = "Python humanize utilities"
 name = "humanize"
 optional = false
@@ -332,7 +340,7 @@ python-versions = "*"
 version = "1.4.4.0"
 
 [metadata]
-content-hash = "ae56dc4c411ae74842ccfbfe575da3c890d5de0f2da662af88db06304bebda4e"
+content-hash = "0df250446400a6b55fc7af460fbff9e76f9e42f985e61e2b9844b5dd4d3a3515"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -391,6 +399,9 @@ entrypoints = [
 flake8 = [
     {file = "flake8-3.7.9-py2.py3-none-any.whl", hash = "sha256:49356e766643ad15072a789a20915d3c91dc89fd313ccd71802303fd67e4deca"},
     {file = "flake8-3.7.9.tar.gz", hash = "sha256:45681a117ecc81e870cbf1262835ae4af5e7a8b08e40b944a8a6e6b895914cfb"},
+]
+flynn = [
+    {file = "flynn-1.0.0b2.tar.gz", hash = "sha256:bb0004e3f6924b3148e3b537988356875c669fb502696fb2f5e366d7297b02d2"},
 ]
 humanize = [
     {file = "humanize-1.0.0-py2.py3-none-any.whl", hash = "sha256:3478104dcb9e111991ad141b15c9bf9522aa00ccfc5144561d639b3372e1d064"},

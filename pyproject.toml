@@ -14,6 +14,7 @@ pyyaml = "^5.3"
 pyinquirer = "^1.0.3"
 ujson = "^1.35"
 bson = "^0.5.9"
+flynn = "^1.0.0-beta.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"
