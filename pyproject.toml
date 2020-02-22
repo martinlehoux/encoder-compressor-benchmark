@@ -13,6 +13,7 @@ terminaltables = "^3.1.0"
 pyyaml = "^5.3"
 pyinquirer = "^1.0.3"
 ujson = "^1.35"
+bson = "^0.5.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"
