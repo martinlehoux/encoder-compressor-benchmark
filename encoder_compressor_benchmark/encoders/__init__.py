@@ -9,6 +9,7 @@ from encoder_compressor_benchmark.encoders.pickle import PICKLEEncoder
 from encoder_compressor_benchmark.encoders.marshal import MARSHALEncoder
 from encoder_compressor_benchmark.encoders.bson import BSONEncoder
 from encoder_compressor_benchmark.encoders.cbor import CBOREncoder
+from encoder_compressor_benchmark.encoders.bencode import BENCODEEncoder
 
 
 AVAILABLE_ENCODERS: List[BaseEncoder] = [
@@ -19,5 +20,6 @@ AVAILABLE_ENCODERS: List[BaseEncoder] = [
     PICKLEEncoder,
     MARSHALEncoder,
     BSONEncoder,
-    CBOREncoder
+    CBOREncoder,
+    BENCODEEncoder
 ]
